@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wallpaper Manager", "Wallpaper Manager\Wallpaper Manager.csproj", "{34408BA2-4103-4C8E-B4D6-369B1C02DE3E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{34408BA2-4103-4C8E-B4D6-369B1C02DE3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34408BA2-4103-4C8E-B4D6-369B1C02DE3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34408BA2-4103-4C8E-B4D6-369B1C02DE3E}.Debug|x64.ActiveCfg = Debug|x64
+		{34408BA2-4103-4C8E-B4D6-369B1C02DE3E}.Debug|x64.Build.0 = Debug|x64
+		{34408BA2-4103-4C8E-B4D6-369B1C02DE3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34408BA2-4103-4C8E-B4D6-369B1C02DE3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34408BA2-4103-4C8E-B4D6-369B1C02DE3E}.Release|x64.ActiveCfg = Release|x64
+		{34408BA2-4103-4C8E-B4D6-369B1C02DE3E}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F3E05D20-00A2-4D02-B2DE-CF3CF5D52EAD}
+	EndGlobalSection
+EndGlobal
