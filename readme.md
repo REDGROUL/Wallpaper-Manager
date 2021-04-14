@@ -4,7 +4,6 @@ Installation guide:
 
 
 Start application for create all need folders.
-unzip WeeBPMpv.zip into WeeBPMpv folder
 
 
 ###############################
