@@ -32,6 +32,9 @@ namespace Wallpaper_Manager
             if (!Directory.Exists("cahed_preview")) {
                 Directory.CreateDirectory("cahed_preview");
             }
+            if (!Directory.Exists("WeeBPMpv")) {
+                Directory.CreateDirectory("WeeBPMpv");
+            }
             refresh();
             
         }

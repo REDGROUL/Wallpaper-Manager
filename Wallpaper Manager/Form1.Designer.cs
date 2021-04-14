@@ -190,6 +190,7 @@
             this.label1.Size = new System.Drawing.Size(29, 13);
             this.label1.TabIndex = 3;
             this.label1.Text = "URL";
+            this.label1.Visible = false;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // checkBox1
@@ -209,6 +210,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(318, 20);
             this.textBox1.TabIndex = 5;
+            this.textBox1.Visible = false;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // button1
@@ -219,6 +221,7 @@
             this.button1.TabIndex = 6;
             this.button1.Text = "Try load";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Visible = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // checkBox2
