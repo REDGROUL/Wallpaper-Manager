@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
-//using VideoLibrary;
+using VideoLibrary;
 
 namespace Wallpaper_Manager
 {
@@ -22,10 +22,18 @@ namespace Wallpaper_Manager
         }
         string wpid;
         string audio = "--no-audio";
+        
 
         public void Form1_Load(object sender, EventArgs e)
         {
+            if (!Directory.Exists("wallpapers")) {
+                Directory.CreateDirectory("wallpapers");
+            }
+            if (!Directory.Exists("cahed_preview")) {
+                Directory.CreateDirectory("cahed_preview");
+            }
             refresh();
+            
         }
 
         void refresh()
@@ -34,6 +42,8 @@ namespace Wallpaper_Manager
             var ffMpeg = new NReco.VideoConverter.FFMpegConverter();
             //работа с файлами
             string[] files = Directory.GetFiles("wallpapers", "*.mp4");
+            
+            
 
             foreach (string paths in files)
             {
@@ -163,21 +173,21 @@ namespace Wallpaper_Manager
             { notifyIcon1.Visible = false; }
         }
 
-        /*private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             if(textBox1.Text != "") 
             {
                 string link = textBox1.Text;
-                SaveVideoToDisk(link);
-                //setWallpapers(textBox1.Text,audio);
+             //   SaveVideoToDisk(link);
+                setWallpapers(textBox1.Text,audio);
             }
         }
-      /*  void SaveVideoToDisk(string link)
+        void SaveVideoToDisk(string link)
         {
             var youTube = YouTube.Default; // starting point for YouTube actions
             var video = youTube.GetVideo(link);// gets a Video object with info about the video
             File.WriteAllBytes(@"wallpapers" + video.FullName, video.GetBytes());
-        }*/
+        }
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBox2.Checked)
@@ -242,5 +252,31 @@ namespace Wallpaper_Manager
                 audio = "--no-audio";
             }
         }
+
+       /* private void button1_Click(object sender, EventArgs e)
+        {
+
+        }*/
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void openFolderToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           string path = Directory.GetCurrentDirectory()+ @"\wallpapers";
+            Process.Start(new ProcessStartInfo("explorer.exe", " /open, "+ path));
+        }
+
+        private void gitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/REDGROUL/Wallpaper-Manager");
+        }
     }
- }
+}
