@@ -76,7 +76,7 @@ namespace Wallpaper_Manager
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Wallpaper Manager (WeeBP GUI+MPV). \nAuthor: REDGROUL \nVersion: pre-Alpha 5\nTest edition❤");
+            MessageBox.Show("Wallpaper Manager (WeeBP GUI+MPV). \nAuthor: REDGROUL \nVersion: pre-Alpha 5\nTest edition❤\nThank You for download, You are awesome");
         }
        
         string runWeebp()

@@ -101,7 +101,7 @@
             // 
             this.gitToolStripMenuItem.Name = "gitToolStripMenuItem";
             this.gitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.gitToolStripMenuItem.Text = "Git";
+            this.gitToolStripMenuItem.Text = "Update";
             this.gitToolStripMenuItem.Click += new System.EventHandler(this.gitToolStripMenuItem_Click);
             // 
             // youA0ToolStripMenuItem
